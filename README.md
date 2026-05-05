@@ -34,3 +34,35 @@ Each module is independent. Modules communicate by reading and writing JSON file
 
 ```bash
 pip install -r requirements.txt
+
+## Prototype Screenshots
+
+The screenshots below show the final web interface for the AI-powered CV screening prototype.
+
+### Main Screen
+
+![Main screen](screenshots/Main%20screen.png)
+
+### Recruiter Query
+
+![Recruiter query](screenshots/Recruiter%20query.png)
+
+### AI-Powered CV Screening Search
+
+![AI-Powered CV Screening Search](screenshots/AI-Powered%20CV%20Screening%20Search.png)
+
+### Explanation Panel
+
+![Explanation panel](screenshots/Explanation%20panel.png)
+
+### Candidate Cards
+
+![Candidate cards](screenshots/Candidate%20cards.png)
+
+### Job Profile
+
+![Job Profile](screenshots/Job%20Profile.png)
+
+### Bias Audit
+
+![Bias Audit](screenshots/Bias%20Audit.png)
