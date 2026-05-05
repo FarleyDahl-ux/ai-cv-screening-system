@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_002",
+  "name": "Marcus Williams",
+  "score": 0.3346,
+  "confidence": "low",
+  "breakdown": {
+    "skills": 0.3882,
+    "experience": 1.0,
+    "education": 1.0
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.5793,
+    "mlp_score": 0.0899,
+    "score_disagreement": 0.4894
+  },
+  "extended_breakdown": {
+    "skills": 0.3882,
+    "essential_skills": 0.3857,
+    "experience": 1.0,
+    "education": 1.0,
+    "completeness": 0.95
+  },
+  "explanation": "Marcus Williams shows meets or exceeds required experience, meets or exceeds required education. Potential concerns include limited overall skill match, missing several essential requirements. The Naive Bayes and MLP scores differ substantially, so this candidate should be reviewed manually."
+}

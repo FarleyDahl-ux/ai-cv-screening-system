@@ -1,0 +1,537 @@
+{
+  "audit_type": "counterfactual_variant_bias_audit",
+  "candidate_count": 4,
+  "variant_count": 256,
+  "original_task3_scores": {
+    "cv_001": 0.8206,
+    "cv_002": 0.3346,
+    "cv_003": 0.8381,
+    "cv_004": 0.2848
+  },
+  "overall_finding": "No statistically significant score shifts were detected across the tested name, university, or employment gap variants.",
+  "important_design_note": "The audit scoring function intentionally excludes name, demographic proxy, university name, university tier, and employment gap from the score. This supports fairness by preventing these fields from directly affecting ranking.",
+  "bias_flags": [],
+  "analysis": [
+    {
+      "dimension": "Name Variant",
+      "group_field": "name_variant_group",
+      "group_summary": {
+        "anglo_name": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "middle_eastern_name": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "east_asian_name": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "south_asian_name": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        }
+      },
+      "anova": {
+        "test": "one_way_anova",
+        "p_value": 1.0,
+        "statistic": 0.0,
+        "significant": false,
+        "note": "Significant means at least one group mean differs at p < 0.05."
+      },
+      "pairwise_tests": [
+        {
+          "group_a": "anglo_name",
+          "group_b": "middle_eastern_name",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "anglo_name",
+          "group_b": "east_asian_name",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "anglo_name",
+          "group_b": "south_asian_name",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "middle_eastern_name",
+          "group_b": "east_asian_name",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "middle_eastern_name",
+          "group_b": "south_asian_name",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "east_asian_name",
+          "group_b": "south_asian_name",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        }
+      ]
+    },
+    {
+      "dimension": "University Variant",
+      "group_field": "university_variant_group",
+      "group_summary": {
+        "high_prestige_university": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "standard_university": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "regional_university": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "international_university": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        }
+      },
+      "anova": {
+        "test": "one_way_anova",
+        "p_value": 1.0,
+        "statistic": 0.0,
+        "significant": false,
+        "note": "Significant means at least one group mean differs at p < 0.05."
+      },
+      "pairwise_tests": [
+        {
+          "group_a": "high_prestige_university",
+          "group_b": "standard_university",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "high_prestige_university",
+          "group_b": "regional_university",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "high_prestige_university",
+          "group_b": "international_university",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "standard_university",
+          "group_b": "regional_university",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "standard_university",
+          "group_b": "international_university",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "regional_university",
+          "group_b": "international_university",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        }
+      ]
+    },
+    {
+      "dimension": "Employment Gap Variant",
+      "group_field": "gap_variant_group",
+      "group_summary": {
+        "no_gap": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "six_month_gap": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "twelve_month_gap": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        },
+        "twenty_four_month_gap": {
+          "count": 64,
+          "mean_score": 0.6744,
+          "std_dev": 0.0936,
+          "min_score": 0.5681,
+          "max_score": 0.777
+        }
+      },
+      "anova": {
+        "test": "one_way_anova",
+        "p_value": 1.0,
+        "statistic": 0.0,
+        "significant": false,
+        "note": "Significant means at least one group mean differs at p < 0.05."
+      },
+      "pairwise_tests": [
+        {
+          "group_a": "no_gap",
+          "group_b": "six_month_gap",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "no_gap",
+          "group_b": "twelve_month_gap",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "no_gap",
+          "group_b": "twenty_four_month_gap",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "six_month_gap",
+          "group_b": "twelve_month_gap",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "six_month_gap",
+          "group_b": "twenty_four_month_gap",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        },
+        {
+          "group_a": "twelve_month_gap",
+          "group_b": "twenty_four_month_gap",
+          "mean_a": 0.6744,
+          "mean_b": 0.6744,
+          "mean_difference": 0.0,
+          "p_value": 1.0,
+          "statistic": 0.0,
+          "significant": false
+        }
+      ]
+    }
+  ],
+  "sample_variants": [
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_high_prestige_university_no_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "University of Sydney",
+      "university_tier": "high prestige",
+      "university_variant_group": "high_prestige_university",
+      "employment_gap_months": 0,
+      "gap_variant_group": "no_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_high_prestige_university_six_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "University of Sydney",
+      "university_tier": "high prestige",
+      "university_variant_group": "high_prestige_university",
+      "employment_gap_months": 6,
+      "gap_variant_group": "six_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_high_prestige_university_twelve_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "University of Sydney",
+      "university_tier": "high prestige",
+      "university_variant_group": "high_prestige_university",
+      "employment_gap_months": 12,
+      "gap_variant_group": "twelve_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_high_prestige_university_twenty_four_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "University of Sydney",
+      "university_tier": "high prestige",
+      "university_variant_group": "high_prestige_university",
+      "employment_gap_months": 24,
+      "gap_variant_group": "twenty_four_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_standard_university_no_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "Western Sydney University",
+      "university_tier": "standard",
+      "university_variant_group": "standard_university",
+      "employment_gap_months": 0,
+      "gap_variant_group": "no_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_standard_university_six_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "Western Sydney University",
+      "university_tier": "standard",
+      "university_variant_group": "standard_university",
+      "employment_gap_months": 6,
+      "gap_variant_group": "six_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_standard_university_twelve_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "Western Sydney University",
+      "university_tier": "standard",
+      "university_variant_group": "standard_university",
+      "employment_gap_months": 12,
+      "gap_variant_group": "twelve_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_standard_university_twenty_four_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "Western Sydney University",
+      "university_tier": "standard",
+      "university_variant_group": "standard_university",
+      "employment_gap_months": 24,
+      "gap_variant_group": "twenty_four_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_regional_university_no_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "Charles Sturt University",
+      "university_tier": "regional",
+      "university_variant_group": "regional_university",
+      "employment_gap_months": 0,
+      "gap_variant_group": "no_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    },
+    {
+      "candidate_id": "cv_001",
+      "variant_id": "cv_001_anglo_name_regional_university_six_month_gap",
+      "name": "Emily Thompson",
+      "original_name": "Aisha Khan",
+      "demographic_proxy": "Anglo-sounding name",
+      "name_variant_group": "anglo_name",
+      "university": "Charles Sturt University",
+      "university_tier": "regional",
+      "university_variant_group": "regional_university",
+      "employment_gap_months": 6,
+      "gap_variant_group": "six_month_gap",
+      "score": 0.7558,
+      "breakdown": {
+        "skills": 0.6706,
+        "essential_skills": 0.7286,
+        "experience": 0.75,
+        "education": 1.0,
+        "completeness": 0.9
+      }
+    }
+  ]
+}

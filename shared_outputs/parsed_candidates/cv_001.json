@@ -1,0 +1,26 @@
+{
+  "candidate_id": "cv_001",
+  "name": "Aisha Khan",
+  "skills": [
+    "python",
+    "sql",
+    "excel",
+    "power bi",
+    "tableau",
+    "data cleaning",
+    "data visualisation",
+    "exploratory data analysis",
+    "basic machine learning",
+    "regression analysis",
+    "classification models",
+    "stakeholder communication",
+    "report writing"
+  ],
+  "experience_years": 3.0,
+  "education_level": "bachelor",
+  "job_titles": [
+    "data analyst",
+    "junior business analyst"
+  ],
+  "completeness_score": 0.9
+}

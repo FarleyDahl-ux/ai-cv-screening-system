@@ -1,0 +1,28 @@
+{
+  "candidate_id": "cv_002",
+  "name": "Marcus Williams",
+  "skills": [
+    "sql",
+    "excel",
+    "tableau",
+    "power bi",
+    "business analysis",
+    "requirements gathering",
+    "stakeholder management",
+    "data reporting",
+    "dashboard development",
+    "process mapping",
+    "process improvement",
+    "data quality checking",
+    "basic python",
+    "financial analysis",
+    "presentation skills"
+  ],
+  "experience_years": 5.0,
+  "education_level": "bachelor",
+  "job_titles": [
+    "senior business analyst",
+    "business analyst"
+  ],
+  "completeness_score": 0.95
+}

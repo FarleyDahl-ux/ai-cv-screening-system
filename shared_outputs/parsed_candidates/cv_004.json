@@ -1,0 +1,28 @@
+{
+  "candidate_id": "cv_004",
+  "name": "Noah Patel",
+  "skills": [
+    "sql",
+    "excel",
+    "power bi",
+    "data cleaning",
+    "data validation",
+    "dashboard development",
+    "business reporting",
+    "data visualisation",
+    "requirements gathering",
+    "stakeholder communication",
+    "process improvement",
+    "basic python",
+    "basic statistics",
+    "report writing",
+    "data quality checking"
+  ],
+  "experience_years": 2.0,
+  "education_level": "bachelor",
+  "job_titles": [
+    "data analyst",
+    "reporting assistant"
+  ],
+  "completeness_score": 0.95
+}

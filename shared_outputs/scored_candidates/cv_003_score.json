@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_003",
+  "name": "Lina Rodriguez",
+  "score": 0.8381,
+  "confidence": "medium",
+  "breakdown": {
+    "skills": 0.6588,
+    "experience": 1.0,
+    "education": 1.0
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.6892,
+    "mlp_score": 0.987,
+    "score_disagreement": 0.2978
+  },
+  "extended_breakdown": {
+    "skills": 0.6588,
+    "essential_skills": 0.6714,
+    "experience": 1.0,
+    "education": 1.0,
+    "completeness": 0.95
+  },
+  "explanation": "Lina Rodriguez shows meets or exceeds required experience, meets or exceeds required education. The Naive Bayes and MLP scores show some disagreement, which reflects uncertainty in the prototype model comparison."
+}

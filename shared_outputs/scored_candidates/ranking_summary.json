@@ -1,0 +1,49 @@
+{
+  "job_id": "jd_001",
+  "job_title": "Senior Data Scientist",
+  "candidate_count": 4,
+  "average_score": 0.5695,
+  "average_model_disagreement": 0.4062,
+  "ranking": [
+    {
+      "rank": 1,
+      "candidate_id": "cv_003",
+      "name": "Lina Rodriguez",
+      "score": 0.8381,
+      "confidence": "medium",
+      "naive_bayes_score": 0.6892,
+      "mlp_score": 0.987,
+      "score_disagreement": 0.2978
+    },
+    {
+      "rank": 2,
+      "candidate_id": "cv_001",
+      "name": "Aisha Khan",
+      "score": 0.8206,
+      "confidence": "medium",
+      "naive_bayes_score": 0.6707,
+      "mlp_score": 0.9705,
+      "score_disagreement": 0.2998
+    },
+    {
+      "rank": 3,
+      "candidate_id": "cv_002",
+      "name": "Marcus Williams",
+      "score": 0.3346,
+      "confidence": "low",
+      "naive_bayes_score": 0.5793,
+      "mlp_score": 0.0899,
+      "score_disagreement": 0.4894
+    },
+    {
+      "rank": 4,
+      "candidate_id": "cv_004",
+      "name": "Noah Patel",
+      "score": 0.2848,
+      "confidence": "low",
+      "naive_bayes_score": 0.5537,
+      "mlp_score": 0.0158,
+      "score_disagreement": 0.5379
+    }
+  ]
+}

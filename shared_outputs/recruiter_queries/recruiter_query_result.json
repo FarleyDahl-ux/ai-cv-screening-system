@@ -1,0 +1,108 @@
+{
+  "query": "show me candidates with machine learning",
+  "top_k": 3,
+  "retrieved_candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "cv_003",
+      "name": "Lina Rodriguez",
+      "similarity": 0.5294,
+      "score": 0.8381,
+      "confidence": "medium",
+      "skills": [
+        "python",
+        "sql",
+        "machine learning",
+        "statistical analysis",
+        "data cleaning",
+        "feature engineering",
+        "predictive modelling",
+        "classification models",
+        "regression models",
+        "random forests",
+        "model evaluation",
+        "data visualisation",
+        "power bi",
+        "tableau",
+        "stakeholder communication",
+        "responsible ai",
+        "model explainability"
+      ],
+      "experience_years": 4.0,
+      "education_level": "master",
+      "breakdown": {
+        "skills": 0.6588,
+        "experience": 1.0,
+        "education": 1.0
+      },
+      "explanation": "Lina Rodriguez shows meets or exceeds required experience, meets or exceeds required education. The Naive Bayes and MLP scores show some disagreement, which reflects uncertainty in the prototype model comparison."
+    },
+    {
+      "rank": 2,
+      "candidate_id": "cv_002",
+      "name": "Marcus Williams",
+      "similarity": 0.4979,
+      "score": 0.3346,
+      "confidence": "low",
+      "skills": [
+        "sql",
+        "excel",
+        "tableau",
+        "power bi",
+        "business analysis",
+        "requirements gathering",
+        "stakeholder management",
+        "data reporting",
+        "dashboard development",
+        "process mapping",
+        "process improvement",
+        "data quality checking",
+        "basic python",
+        "financial analysis",
+        "presentation skills"
+      ],
+      "experience_years": 5.0,
+      "education_level": "bachelor",
+      "breakdown": {
+        "skills": 0.3882,
+        "experience": 1.0,
+        "education": 1.0
+      },
+      "explanation": "Marcus Williams shows meets or exceeds required experience, meets or exceeds required education. Potential concerns include limited overall skill match, missing several essential requirements. The Naive Bayes and MLP scores differ substantially, so this candidate should be reviewed manually."
+    },
+    {
+      "rank": 3,
+      "candidate_id": "cv_004",
+      "name": "Noah Patel",
+      "similarity": 0.4967,
+      "score": 0.2848,
+      "confidence": "low",
+      "skills": [
+        "sql",
+        "excel",
+        "power bi",
+        "data cleaning",
+        "data validation",
+        "dashboard development",
+        "business reporting",
+        "data visualisation",
+        "requirements gathering",
+        "stakeholder communication",
+        "process improvement",
+        "basic python",
+        "basic statistics",
+        "report writing",
+        "data quality checking"
+      ],
+      "experience_years": 2.0,
+      "education_level": "bachelor",
+      "breakdown": {
+        "skills": 0.4353,
+        "experience": 0.5,
+        "education": 1.0
+      },
+      "explanation": "Noah Patel shows meets or exceeds required education. Potential concerns include limited overall skill match, missing several essential requirements, below the required experience level. The Naive Bayes and MLP scores differ substantially, so this candidate should be reviewed manually."
+    }
+  ],
+  "recommendation": "### Recommendation for Machine Learning Candidates\n\nBased on your query for candidates with machine learning experience, here are the top three candidates retrieved:\n\n1. **Lina Rodriguez** (Rank 1)\n   - **Overall Score**: 0.8381 (High)\n   - **Semantic Similarity**: 0.5294 (Moderate)\n   - **Experience**: 4 years (Master's degree)\n   - **Skills**: Extensive skills in machine learning, statistical analysis, and model evaluation.\n\n2. **Marcus Williams** (Rank 2)\n   - **Overall Score**: 0.3346 (Low)\n   - **Semantic Similarity**: 0.4979 (Moderate)\n   - **Experience**: 5 years (Bachelor's degree)\n   - **Skills**: Primarily focused on business analysis; lacks direct machine learning skills.\n\n3. **Noah Patel** (Rank 3)\n   - **Overall Score**: 0.2848 (Low)\n   - **Semantic Similarity**: 0.4967 (Moderate)\n   - **Experience**: 2 years (Bachelor's degree)\n   - **Skills**: Limited experience and skills directly related to machine learning.\n\n### Explanation\nLina Rodriguez stands out due to her strong overall score and relevant machine learning skills, making her the top candidate. The other two candidates, Marcus Williams and Noah Patel, have lower scores and do not possess essential skills for machine learning, although they meet educational requirements.\n\n### Limitations and Uncertainty\nWhile the semantic similarity suggests some relevance in their backgrounds, the overall scores indicate significant limitations for Marcus and Noah. Their expertise mainly lies in business analysis and data visualization, which may not fully align with machine learning requirements. It's worth noting that there is some uncertainty reflected in the model comparisons, especially for Marcus.\n\nPlease remember, this is a decision support tool and not an automatic hiring decision. Further review of candidates, particularly those with lower scores, may be necessary."
+}

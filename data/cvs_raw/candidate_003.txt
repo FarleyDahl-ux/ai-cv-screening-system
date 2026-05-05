@@ -1,0 +1,99 @@
+Lina Rodriguez
+Brisbane, QLD
+Email: lina.rodriguez@example.com
+Phone: 0433 789 214
+LinkedIn: linkedin.com/in/linarodriguez-data
+
+PROFESSIONAL SUMMARY
+
+Data scientist with 4 years of experience applying Python, SQL, machine learning, and statistical analysis to business and customer data. Experienced in building predictive models, cleaning large datasets, evaluating model performance, and communicating findings to product, marketing, and operations teams. Strong interest in ethical AI, model explainability, and practical decision-support systems.
+
+KEY SKILLS
+
+- Python
+- SQL
+- Machine learning
+- Statistical analysis
+- Data cleaning
+- Feature engineering
+- Predictive modelling
+- Classification models
+- Regression models
+- Random forests
+- Model evaluation
+- Data visualisation
+- Power BI
+- Tableau
+- Stakeholder communication
+- Responsible AI
+- Model explainability
+
+WORK EXPERIENCE
+
+Data Scientist
+Riverstone Analytics
+Brisbane, QLD
+August 2022 – Present
+
+- Built predictive models to identify customers at risk of churn using Python and scikit-learn.
+- Cleaned and transformed customer, transaction, and product usage datasets using SQL and Python.
+- Compared logistic regression, random forest, and gradient boosting models using accuracy, precision, recall, and F1-score.
+- Created Power BI dashboards showing customer retention patterns and model outputs.
+- Worked with marketing and customer success teams to explain model findings and recommend intervention strategies.
+- Documented model limitations, data quality issues, and possible fairness risks.
+
+Junior Data Scientist
+Nova Retail Group
+Brisbane, QLD
+February 2020 – July 2022
+
+- Analysed sales and loyalty program data to identify customer segments and purchasing patterns.
+- Used Python notebooks for exploratory data analysis, feature engineering, and visualisation.
+- Built regression models to estimate demand for selected product categories.
+- Prepared weekly reporting summaries for merchandising and operations teams.
+- Supported dashboard development in Tableau and Power BI.
+- Collaborated with business stakeholders to translate analytical results into practical recommendations.
+
+EDUCATION
+
+Master of Data Science
+Queensland University of Technology
+2018 – 2019
+
+Bachelor of Information Systems
+University of Queensland
+2015 – 2017
+
+CERTIFICATIONS
+
+- Machine Learning Specialization, Coursera, 2021
+- Microsoft Power BI Data Analyst Associate, 2022
+- Responsible AI Fundamentals, Microsoft Learn, 2024
+
+PROJECTS
+
+Customer Churn Modelling Project
+2023
+
+- Developed a machine learning model to predict customer churn.
+- Tested logistic regression, random forest, and gradient boosting approaches.
+- Evaluated model performance using precision, recall, F1-score, and ROC-AUC.
+- Produced a plain-English report explaining key predictors and limitations.
+
+Responsible AI Review
+2024
+
+- Reviewed a customer segmentation model for possible fairness and explainability concerns.
+- Documented limitations related to incomplete demographic data and uneven customer representation.
+- Suggested human review checkpoints before using model outputs for customer decisions.
+
+ADDITIONAL INFORMATION
+
+- Available to start immediately
+- Strong written and verbal communication skills
+- Comfortable explaining technical findings to non-technical stakeholders
+- Interested in recruitment analytics, ethical AI, and decision-support tools
+
+REFERENCES
+
+Available on request.

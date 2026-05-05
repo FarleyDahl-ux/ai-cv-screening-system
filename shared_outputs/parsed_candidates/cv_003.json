@@ -1,0 +1,30 @@
+{
+  "candidate_id": "cv_003",
+  "name": "Lina Rodriguez",
+  "skills": [
+    "python",
+    "sql",
+    "machine learning",
+    "statistical analysis",
+    "data cleaning",
+    "feature engineering",
+    "predictive modelling",
+    "classification models",
+    "regression models",
+    "random forests",
+    "model evaluation",
+    "data visualisation",
+    "power bi",
+    "tableau",
+    "stakeholder communication",
+    "responsible ai",
+    "model explainability"
+  ],
+  "experience_years": 4.0,
+  "education_level": "master",
+  "job_titles": [
+    "data scientist",
+    "junior data scientist"
+  ],
+  "completeness_score": 0.95
+}

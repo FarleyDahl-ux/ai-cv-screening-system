@@ -1,0 +1,68 @@
+{
+  "job_id": "jd_001",
+  "title": "Senior Data Scientist",
+  "requirements": [
+    {
+      "skill": "python",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "sql",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "machine learning",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "data cleaning",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "data analysis",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "communication",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "stakeholder management",
+      "weight": 1.0,
+      "essential": true
+    },
+    {
+      "skill": "cloud platforms",
+      "weight": 0.3,
+      "essential": false
+    },
+    {
+      "skill": "power bi",
+      "weight": 0.3,
+      "essential": false
+    },
+    {
+      "skill": "tableau",
+      "weight": 0.3,
+      "essential": false
+    },
+    {
+      "skill": "postgraduate qualification",
+      "weight": 0.3,
+      "essential": false
+    },
+    {
+      "skill": "responsible ai",
+      "weight": 0.3,
+      "essential": false
+    }
+  ],
+  "experience_years_required": 4.0,
+  "education_required": "bachelor"
+}

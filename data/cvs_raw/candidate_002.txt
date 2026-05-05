@@ -1,0 +1,93 @@
+Marcus Williams
+Melbourne, VIC
+Email: marcus.williams@example.com
+Phone: 0412 555 890
+LinkedIn: linkedin.com/in/marcuswilliams-analytics
+
+PROFESSIONAL SUMMARY
+
+Business analyst with 5 years of experience in financial services and operations reporting. Skilled in SQL, Excel, Tableau, stakeholder management, requirements gathering, and process improvement. Strong experience working with business teams to define reporting needs, document workflows, and translate data insights into practical recommendations. Currently developing stronger Python and machine learning skills.
+
+KEY SKILLS
+
+- SQL
+- Excel
+- Tableau
+- Power BI
+- Business analysis
+- Requirements gathering
+- Stakeholder management
+- Data reporting
+- Dashboard development
+- Process mapping
+- Process improvement
+- Data quality checking
+- Basic Python
+- Financial analysis
+- Presentation skills
+
+WORK EXPERIENCE
+
+Senior Business Analyst
+Harbour Finance Group
+Melbourne, VIC
+July 2022 – Present
+
+- Worked with operations, finance, and risk teams to define reporting requirements.
+- Built Tableau dashboards tracking loan processing times, customer enquiries, and team performance.
+- Used SQL to extract and clean customer and transaction data from internal databases.
+- Prepared weekly and monthly performance reports for senior managers.
+- Identified process bottlenecks that reduced average loan approval time by 12%.
+- Supported a data quality improvement project by documenting common reporting errors and validation rules.
+- Presented findings to non-technical stakeholders using clear charts and plain-English summaries.
+
+Business Analyst
+Northline Insurance Services
+Melbourne, VIC
+February 2019 – June 2022
+
+- Analysed claims processing data using Excel, SQL, and Tableau.
+- Created dashboards to monitor claim volumes, processing delays, and customer service outcomes.
+- Gathered requirements from claims managers and translated them into reporting specifications.
+- Supported process improvement workshops with operational teams.
+- Created documentation for reporting workflows and data definitions.
+- Helped automate parts of a monthly reporting process, reducing manual work by approximately 4 hours per month.
+
+EDUCATION
+
+Bachelor of Business Information Systems
+RMIT University
+2015 – 2018
+
+CERTIFICATIONS
+
+- Tableau Desktop Specialist, 2021
+- Agile Business Analysis Foundations, 2022
+- Python for Everybody, Coursera, 2024
+
+PROJECTS
+
+Loan Processing Dashboard
+2023
+
+- Designed and built a Tableau dashboard showing loan application status, approval times, and backlog trends.
+- Used SQL queries to join application, customer, and approval datasets.
+- Worked with managers to refine dashboard filters and reporting categories.
+
+Data Quality Rules Project
+2022
+
+- Documented common data quality issues in customer records.
+- Helped define validation rules for missing values, duplicate records, and inconsistent field formats.
+- Produced a short guide for business users explaining how to interpret data quality flags.
+
+ADDITIONAL INFORMATION
+
+- Available to start with two weeks’ notice
+- Strong communication and workshop facilitation skills
+- Interested in data-driven decision support and responsible use of AI in business processes
+- Currently learning scikit-learn and basic predictive modelling
+
+REFERENCES
+
+Available on request.

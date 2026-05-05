@@ -1,0 +1,91 @@
+Noah Patel
+Adelaide, SA
+Email: noah.patel@example.com
+Phone: 0421 904 667
+LinkedIn: linkedin.com/in/noahpatel-analytics
+
+PROFESSIONAL SUMMARY
+
+Junior data analyst with 2 years of experience in healthcare and operations reporting. Skilled in SQL, Excel, Power BI, data cleaning, dashboard development, and stakeholder reporting. Currently building stronger Python and machine learning skills through personal projects and online coursework. Interested in using data to improve service delivery and support fair, evidence-based decision-making.
+
+KEY SKILLS
+
+- SQL
+- Excel
+- Power BI
+- Data cleaning
+- Data validation
+- Dashboard development
+- Business reporting
+- Data visualisation
+- Requirements gathering
+- Stakeholder communication
+- Process improvement
+- Basic Python
+- Basic statistics
+- Report writing
+- Data quality checking
+
+WORK EXPERIENCE
+
+Data Analyst
+HealthPath Services
+Adelaide, SA
+May 2023 – Present
+
+- Built Power BI dashboards to monitor patient appointment volumes, waiting times, and service utilisation.
+- Used SQL to extract and clean operational data from internal reporting systems.
+- Prepared weekly reports for clinic managers and administrative teams.
+- Identified data quality issues caused by inconsistent appointment categories.
+- Worked with non-technical stakeholders to clarify reporting requirements.
+- Created Excel templates to standardise monthly performance reporting.
+
+Reporting Assistant
+CareLink Operations
+Adelaide, SA
+February 2022 – April 2023
+
+- Supported operational reporting for aged care and community support programs.
+- Cleaned spreadsheets, checked missing values, and prepared summary tables.
+- Assisted with dashboard updates in Power BI.
+- Documented reporting steps so other team members could repeat the process.
+- Helped managers interpret service activity trends and identify workload pressures.
+
+EDUCATION
+
+Bachelor of Health Information Management
+University of South Australia
+2018 – 2021
+
+CERTIFICATIONS
+
+- Microsoft Power BI Data Analyst Associate, 2024
+- SQL for Data Analysis, DataCamp, 2023
+- Python Basics for Data Analysis, Coursera, 2024
+
+PROJECTS
+
+Healthcare Waiting Time Dashboard
+2024
+
+- Created a Power BI dashboard showing appointment wait times by service type and location.
+- Used SQL extracts and Excel cleaning steps to prepare the data.
+- Added filters for month, clinic, appointment category, and referral source.
+
+Python Learning Project
+2024
+
+- Built a simple Python notebook to analyse public health service data.
+- Used pandas to clean missing values and produce summary tables.
+- Created basic charts showing service demand trends over time.
+
+ADDITIONAL INFORMATION
+
+- Available to start with three weeks’ notice
+- Strong interest in healthcare analytics and responsible AI
+- Comfortable working with confidential data and following privacy procedures
+- Strong written communication and documentation skills
+
+REFERENCES
+
+Available on request.

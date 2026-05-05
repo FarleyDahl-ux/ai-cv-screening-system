@@ -1,0 +1,20 @@
+Senior Data Scientist
+
+We are seeking a Senior Data Scientist to join our analytics team. The role will involve building predictive models, analysing large datasets, and communicating insights to business stakeholders.
+
+Essential requirements:
+- Strong Python programming skills
+- Experience with SQL and relational databases
+- Practical experience building machine learning models
+- Ability to clean, transform, and analyse large datasets
+- Strong communication and stakeholder management skills
+- At least 4 years of relevant experience in data science, analytics, or machine learning
+
+Desirable requirements:
+- Experience with cloud platforms such as AWS, Azure, or Google Cloud
+- Experience with Power BI or Tableau
+- Postgraduate qualification in data science, statistics, computer science, or a related field
+- Understanding of responsible AI and model fairness
+
+Education:
+Bachelor degree in data science, statistics, computer science, information systems, or a related field is required. A master's degree is preferred.

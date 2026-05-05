@@ -1,0 +1,41 @@
+Business Intelligence Analyst
+
+We are looking for a Business Intelligence Analyst to join our operations and reporting team. The role focuses on transforming business data into clear dashboards, reports, and practical insights that help managers make better decisions.
+
+The successful candidate will work closely with operations, finance, and customer service teams to understand reporting needs, clean and validate datasets, build dashboards, and explain trends to non-technical stakeholders.
+
+Essential requirements:
+
+- Strong SQL skills and experience working with relational databases
+- Advanced Excel skills, including formulas, pivot tables, and data cleaning
+- Experience building dashboards in Power BI or Tableau
+- Ability to clean, validate, and prepare business datasets
+- Strong data visualisation and reporting skills
+- Ability to gather requirements from business stakeholders
+- Clear written and verbal communication skills
+- At least 2 years of experience in business intelligence, data analysis, reporting, or business analysis
+
+Desirable requirements:
+
+- Experience with Python for data analysis
+- Understanding of data quality frameworks and validation rules
+- Experience documenting reporting processes and data definitions
+- Experience in financial services, healthcare, retail, or operations reporting
+- Basic understanding of predictive analytics or machine learning
+- Interest in responsible AI and ethical use of data
+
+Education:
+
+A bachelor degree in information systems, business analytics, commerce, data analytics, computer science, or a related field is preferred, but equivalent professional experience will also be considered.
+
+Key responsibilities:
+
+- Develop and maintain dashboards for operational and management reporting
+- Use SQL to extract, join, and validate data from internal systems
+- Clean and prepare datasets for analysis and reporting
+- Work with stakeholders to define reporting requirements and success measures
+- Translate business questions into data analysis tasks
+- Present findings using clear visualisations and plain-English explanations
+- Document dashboard logic, data sources, and reporting definitions
+- Identify data quality issues and recommend process improvements
+- Support continuous improvement of reporting workflows

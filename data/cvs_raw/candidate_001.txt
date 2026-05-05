@@ -1,0 +1,90 @@
+Aisha Khan
+Sydney, NSW
+Email: aisha.khan@example.com
+Phone: 0400 123 456
+LinkedIn: linkedin.com/in/aishakhan-data
+
+PROFESSIONAL SUMMARY
+
+Motivated junior data analyst with 3 years of experience using Python, SQL, Excel, and Power BI to analyse business data and support decision-making. Experienced in cleaning datasets, creating dashboards, preparing reports, and explaining insights to non-technical stakeholders. Interested in moving into a junior data scientist role with a focus on machine learning and ethical AI.
+
+KEY SKILLS
+
+- Python
+- SQL
+- Excel
+- Power BI
+- Tableau
+- Data cleaning
+- Data visualisation
+- Exploratory data analysis
+- Basic machine learning
+- Regression analysis
+- Classification models
+- Stakeholder communication
+- Report writing
+
+WORK EXPERIENCE
+
+Data Analyst
+Retail Insights Australia
+Sydney, NSW
+March 2022 – Present
+
+- Cleaned and analysed weekly sales data across 120 retail stores using Python, SQL, and Excel.
+- Built Power BI dashboards to track product performance, customer segments, and sales trends.
+- Used exploratory data analysis to identify underperforming product categories.
+- Prepared monthly insight reports for marketing and operations teams.
+- Worked with business stakeholders to translate reporting needs into dashboard requirements.
+- Assisted with a customer churn analysis project using logistic regression and decision trees.
+
+Junior Business Analyst
+BrightPath Consulting
+Sydney, NSW
+January 2021 – February 2022
+
+- Supported consultants by preparing data summaries, charts, and client reports.
+- Used Excel and SQL queries to extract and validate customer data.
+- Created visualisations in Tableau for internal presentations.
+- Documented business requirements and helped map existing reporting processes.
+- Presented findings to small internal teams.
+
+EDUCATION
+
+Bachelor of Commerce
+University of Technology Sydney
+2018 – 2020
+Major: Business Analytics
+
+CERTIFICATIONS
+
+- Google Data Analytics Certificate, 2021
+- Microsoft Power BI Data Analyst Associate, 2023
+- Introductory Machine Learning with Python, Coursera, 2024
+
+PROJECTS
+
+Customer Churn Prediction Project
+2024
+
+- Built a basic machine learning model to predict customer churn using Python and scikit-learn.
+- Compared logistic regression, decision tree, and random forest models.
+- Evaluated model performance using accuracy, precision, recall, and confusion matrix.
+- Wrote a short report explaining model limitations and possible bias in the dataset.
+
+Sales Dashboard Automation
+2023
+
+- Automated weekly sales reporting using SQL extracts, Python data cleaning scripts, and Power BI dashboards.
+- Reduced manual reporting time from 5 hours to 1 hour per week.
+
+ADDITIONAL INFORMATION
+
+- Australian citizen
+- Available to start with four weeks’ notice
+- Strong written and verbal communication skills
+- Interested in responsible AI and fair recruitment practices
+
+REFERENCES
+
+Available on request.

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI-Powered CV Screening Search</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Recruiter decision-support prototype</p>
+        <h1>AI-Powered CV Screening Search</h1>
+        <p class="subtitle">
+          Ask a plain-English question and retrieve relevant candidates using semantic search,
+          ranking scores, and transparent shortlist explanation.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <form method="POST" class="search-form">
+        <label for="query">Recruiter query</label>
+
+        <textarea
+          id="query"
+          name="query"
+          rows="3"
+          placeholder="Example: who has the strongest Python background?"
+        >{{ query }}</textarea>
+
+        <div class="form-row">
+          <div>
+            <label for="top_k">Shortlist size</label>
+            <select id="top_k" name="top_k">
+              <option value="1" {% if selected_top_k == "1" %}selected{% endif %}>1 candidate</option>
+              <option value="2" {% if selected_top_k == "2" %}selected{% endif %}>2 candidates</option>
+              <option value="3" {% if selected_top_k == "3" %}selected{% endif %}>3 candidates</option>
+              <option value="5" {% if selected_top_k == "5" %}selected{% endif %}>5 candidates</option>
+            </select>
+          </div>
+
+          <label class="checkbox">
+            <input
+              type="checkbox"
+              name="rebuild_index"
+              {% if rebuild_checked %}checked{% endif %}
+            />
+            Rebuild embedding index
+          </label>
+        </div>
+
+        <button type="submit">Search candidates</button>
+      </form>
+    </section>
+
+    <section class="examples">
+      <p>Try these demo queries:</p>
+
+      <div class="chips">
+        <span>who has the strongest Python background?</span>
+        <span>show me candidates with stakeholder management experience</span>
+        <span>who is strongest for SQL and dashboard reporting?</span>
+        <span>who looks most suitable overall?</span>
+      </div>
+    </section>
+
+    <section class="tab-panel">
+      <div class="tabs">
+        <button class="tab-button active" type="button" data-tab="candidate-tab">
+          Candidate results
+        </button>
+
+        <button class="tab-button" type="button" data-tab="job-tab">
+          Job profile
+        </button>
+
+        <button class="tab-button" type="button" data-tab="bias-tab">
+          Bias audit
+        </button>
+      </div>
+
+      <div id="candidate-tab" class="tab-content active">
+        {% if error %}
+          <section class="error">
+            {{ error }}
+          </section>
+        {% endif %}
+
+        {% if recommendation %}
+          <section class="recommendation">
+            <p class="eyebrow">Shortlist recommendation</p>
+            <h2>Explanation</h2>
+            <p>{{ recommendation }}</p>
+          </section>
+        {% else %}
+          <section class="empty-state">
+            <h2>No candidate search run yet</h2>
+            <p>
+              Enter a recruiter query above to retrieve and explain a shortlist.
+            </p>
+          </section>
+        {% endif %}
+
+        {% if results %}
+          <section class="results">
+            <p class="eyebrow">Retrieved candidates</p>
+            <h2>Candidate cards</h2>
+
+            <div class="card-grid">
+              {% for item in results %}
+                {% set record = item.record %}
+
+                <article class="candidate-card">
+                  <div class="card-header">
+                    <div>
+                      <p class="candidate-id">{{ record.candidate_id }}</p>
+                      <h3>{{ record.name }}</h3>
+                    </div>
+
+                    <div class="score-pill">
+                      {{ "%.0f"|format(record.score * 100) }}%
+                    </div>
+                  </div>
+
+                  <div class="meta-row">
+                    <span>{{ record.experience_years }} years experience</span>
+                    <span>{{ record.education_level }}</span>
+                    <span>{{ record.confidence }} confidence</span>
+                  </div>
+
+                  <div class="similarity">
+                    Semantic match: {{ "%.1f"|format(item.similarity * 100) }}%
+                  </div>
+
+                  <div class="breakdown">
+                    <div>
+                      <span>Skills</span>
+                      <strong>{{ "%.0f"|format(record.breakdown.skills * 100) }}%</strong>
+                    </div>
+
+                    <div>
+                      <span>Experience</span>
+                      <strong>{{ "%.0f"|format(record.breakdown.experience * 100) }}%</strong>
+                    </div>
+
+                    <div>
+                      <span>Education</span>
+                      <strong>{{ "%.0f"|format(record.breakdown.education * 100) }}%</strong>
+                    </div>
+                  </div>
+
+                  <div class="skills">
+                    {% for skill in record.skills[:10] %}
+                      <span>{{ skill }}</span>
+                    {% endfor %}
+                  </div>
+
+                  <p class="explanation">
+                    {{ record.explanation }}
+                  </p>
+
+                  {% if record.method_comparison %}
+                    <div class="model-comparison">
+                      <p>Model comparison</p>
+
+                      <div class="comparison-grid">
+                        <div>
+                          <span>Naïve Bayes</span>
+                          <strong>
+                            {{ "%.0f"|format(record.method_comparison.naive_bayes_score * 100) }}%
+                          </strong>
+                        </div>
+
+                        <div>
+                          <span>MLP</span>
+                          <strong>
+                            {{ "%.0f"|format(record.method_comparison.mlp_score * 100) }}%
+                          </strong>
+                        </div>
+
+                        <div>
+                          <span>Disagreement</span>
+                          <strong>
+                            {{ "%.0f"|format(record.method_comparison.score_disagreement * 100) }}%
+                          </strong>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                </article>
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+      </div>
+
+      <div id="job-tab" class="tab-content">
+        <section class="job-panel">
+          <div class="job-header">
+            <div>
+              <p class="eyebrow">Role being screened</p>
+              <h2>{{ job_profile.title }}</h2>
+            </div>
+
+            {% if job_profile.available %}
+              <span class="audit-status status-ready">Job profile loaded</span>
+            {% else %}
+              <span class="audit-status status-missing">Job profile missing</span>
+            {% endif %}
+          </div>
+
+          {% if job_profile.message %}
+            <p class="bias-finding">
+              {{ job_profile.message }}
+            </p>
+          {% endif %}
+
+          {% if job_profile.available %}
+            <div class="job-metrics">
+              <div>
+                <span>Job ID</span>
+                <strong>{{ job_profile.job_id }}</strong>
+              </div>
+
+              <div>
+                <span>Required experience</span>
+                <strong>{{ job_profile.experience_years_required }} years</strong>
+              </div>
+
+              <div>
+                <span>Required education</span>
+                <strong>{{ job_profile.education_required }}</strong>
+              </div>
+            </div>
+
+            <div class="requirements-section">
+              <h3>Weighted requirements</h3>
+
+              <div class="requirements-list">
+                {% for requirement in job_profile.requirements %}
+                  <div class="requirement-row">
+                    <div>
+                      <strong>{{ requirement.skill }}</strong>
+
+                      {% if requirement.essential %}
+                        <span class="requirement-type essential">Essential</span>
+                      {% else %}
+                        <span class="requirement-type desirable">Desirable</span>
+                      {% endif %}
+                    </div>
+
+                    <div class="weight-wrap">
+                      <span>{{ "%.0f"|format(requirement.weight * 100) }}%</span>
+                      <div class="weight-bar">
+                        <div
+                          class="weight-fill"
+                          style="width: {{ requirement.weight * 100 }}%;"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <p class="design-note">
+              This job profile is generated from the plain-text job description. The candidate ranker uses these weighted requirements to compare each CV against the role.
+            </p>
+          {% endif %}
+        </section>
+      </div>
+
+      <div id="bias-tab" class="tab-content">
+        <section class="bias-panel">
+          <div class="bias-header">
+            <div>
+              <p class="eyebrow">Responsible AI check</p>
+              <h2>Counterfactual Bias Audit</h2>
+            </div>
+
+            {% if bias_report.available %}
+              <span class="audit-status status-ready">Audit available</span>
+            {% else %}
+              <span class="audit-status status-missing">Audit not run</span>
+            {% endif %}
+          </div>
+
+          <p class="bias-finding">
+            {{ bias_report.overall_finding }}
+          </p>
+
+          <div class="audit-metrics">
+            <div>
+              <span>Candidates tested</span>
+              <strong>{{ bias_report.candidate_count }}</strong>
+            </div>
+
+            <div>
+              <span>Counterfactual variants</span>
+              <strong>{{ bias_report.variant_count }}</strong>
+            </div>
+
+            <div>
+              <span>Bias flags</span>
+              <strong>{{ bias_report.bias_flags|length }}</strong>
+            </div>
+          </div>
+
+          {% if bias_report.important_design_note %}
+            <p class="design-note">
+              {{ bias_report.important_design_note }}
+            </p>
+          {% endif %}
+
+          {% if bias_report.bias_flags and bias_report.bias_flags|length > 0 %}
+            <div class="flags">
+              <h3>Detected bias flags</h3>
+
+              {% for flag in bias_report.bias_flags %}
+                <div class="flag-card">
+                  <strong>{{ flag.dimension }}</strong>
+
+                  <p>{{ flag.interpretation }}</p>
+
+                  <p>
+                    Mean difference: {{ flag.mean_difference }},
+                    p-value: {{ flag.p_value }}
+                  </p>
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <p class="no-flags">
+              No statistically significant score shifts were detected in the current audit.
+            </p>
+          {% endif %}
+
+          {% if bias_chart_available %}
+            <div class="chart-wrap">
+              <h3>Mean score by variant group</h3>
+              <p class="chart-note">
+                The chart is expected to be flat when the scoring function excludes name,
+                university name, university tier, and employment gap from the ranking logic.
+              </p>
+              <img
+                src="/bias-chart"
+                alt="Bias audit chart showing mean score by variant group"
+              />
+            </div>
+          {% endif %}
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const tabId = button.getAttribute("data-tab");
+
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        button.classList.add("active");
+        document.getElementById(tabId).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
