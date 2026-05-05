@@ -1,6 +1,5 @@
 import json
 import os
-import re
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -14,6 +13,10 @@ from openai import OpenAI
 # Reads raw CV text files from data/cvs_raw/
 # Uses OpenAI to extract structured candidate information
 # Writes one JSON file per CV to shared_outputs/parsed_candidates/
+#
+# Update:
+# The completeness_score is now calculated deterministically after parsing,
+# rather than relying on GPT to estimate it.
 # ------------------------------------------------------------
 
 
@@ -29,6 +32,7 @@ MODEL_NAME = "gpt-4o-mini"
 def load_api_key() -> None:
     """
     Loads environment variables from .env.local.
+
     The .env.local file should contain:
     OPENAI_API_KEY=your_api_key_here
     """
@@ -44,7 +48,9 @@ def load_api_key() -> None:
 def create_candidate_id(file_path: Path, index: int) -> str:
     """
     Creates a stable candidate ID from the file number.
-    Example: cv_001, cv_002
+
+    Example:
+    cv_001, cv_002, cv_003
     """
     return f"cv_{index:03d}"
 
@@ -63,7 +69,7 @@ def clean_skill_list(skills: List[str]) -> List[str]:
     cleaned = []
 
     for skill in skills:
-        skill_clean = skill.strip().lower()
+        skill_clean = str(skill).strip().lower()
 
         if skill_clean and skill_clean not in cleaned:
             cleaned.append(skill_clean)
@@ -78,7 +84,7 @@ def clean_job_titles(job_titles: List[str]) -> List[str]:
     cleaned = []
 
     for title in job_titles:
-        title_clean = title.strip().lower()
+        title_clean = str(title).strip().lower()
 
         if title_clean and title_clean not in cleaned:
             cleaned.append(title_clean)
@@ -86,9 +92,55 @@ def clean_job_titles(job_titles: List[str]) -> List[str]:
     return cleaned
 
 
+def calculate_completeness_score(candidate_data: Dict[str, Any]) -> float:
+    """
+    Calculates CV completeness deterministically from required field coverage.
+
+    This is more reliable than asking GPT to estimate completeness because it
+    uses a transparent rule.
+
+    Five fields are checked:
+    1. name
+    2. skills
+    3. experience_years
+    4. education_level
+    5. job_titles
+
+    The score is:
+    completed fields / total fields
+    """
+    checks = []
+
+    name = str(candidate_data.get("name", "")).strip().lower()
+    checks.append(bool(name and name != "unknown"))
+
+    skills = candidate_data.get("skills", [])
+    checks.append(isinstance(skills, list) and len(skills) > 0)
+
+    experience_years = candidate_data.get("experience_years", None)
+
+    try:
+        experience_value = float(experience_years)
+        checks.append(experience_value >= 0)
+    except (TypeError, ValueError):
+        checks.append(False)
+
+    education_level = str(candidate_data.get("education_level", "")).strip().lower()
+    checks.append(bool(education_level and education_level != "unknown"))
+
+    job_titles = candidate_data.get("job_titles", [])
+    checks.append(isinstance(job_titles, list) and len(job_titles) > 0)
+
+    completed = sum(checks)
+    total = len(checks)
+
+    return round(completed / total, 2)
+
+
 def validate_candidate_json(candidate_data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Performs simple validation and cleanup after the model response.
+
     This makes the JSON safer for Task 3, Task 4, and Task 5.
     """
 
@@ -106,20 +158,52 @@ def validate_candidate_json(candidate_data: Dict[str, Any]) -> Dict[str, Any]:
         if field not in candidate_data:
             raise ValueError(f"Missing required field: {field}")
 
+    candidate_data["candidate_id"] = str(candidate_data["candidate_id"]).strip()
+
+    candidate_data["name"] = str(candidate_data["name"]).strip()
+
+    if not candidate_data["name"]:
+        candidate_data["name"] = "unknown"
+
     candidate_data["skills"] = clean_skill_list(candidate_data["skills"])
     candidate_data["job_titles"] = clean_job_titles(candidate_data["job_titles"])
 
-    candidate_data["experience_years"] = float(candidate_data["experience_years"])
+    try:
+        candidate_data["experience_years"] = float(candidate_data["experience_years"])
+    except (TypeError, ValueError):
+        candidate_data["experience_years"] = 0.0
 
-    candidate_data["education_level"] = str(candidate_data["education_level"]).strip().lower()
+    if candidate_data["experience_years"] < 0:
+        candidate_data["experience_years"] = 0.0
 
-    candidate_data["completeness_score"] = float(candidate_data["completeness_score"])
-    candidate_data["completeness_score"] = max(0.0, min(1.0, candidate_data["completeness_score"]))
+    candidate_data["education_level"] = (
+        str(candidate_data["education_level"]).strip().lower()
+    )
+
+    allowed_education_levels = [
+        "high school",
+        "certificate",
+        "diploma",
+        "bachelor",
+        "master",
+        "phd",
+        "unknown",
+    ]
+
+    if candidate_data["education_level"] not in allowed_education_levels:
+        candidate_data["education_level"] = "unknown"
+
+    # Deterministic replacement for GPT-estimated completeness.
+    candidate_data["completeness_score"] = calculate_completeness_score(candidate_data)
 
     return candidate_data
 
 
-def extract_candidate_data(client: OpenAI, cv_text: str, candidate_id: str) -> Dict[str, Any]:
+def extract_candidate_data(
+    client: OpenAI,
+    cv_text: str,
+    candidate_id: str
+) -> Dict[str, Any]:
     """
     Sends the CV text to OpenAI and extracts structured candidate data.
     """
@@ -140,7 +224,10 @@ def extract_candidate_data(client: OpenAI, cv_text: str, candidate_id: str) -> D
                 },
                 "skills": {
                     "type": "array",
-                    "description": "A list of technical, analytical, communication, and professional skills found in the CV.",
+                    "description": (
+                        "A list of technical, analytical, communication, "
+                        "and professional skills found in the CV."
+                    ),
                     "items": {
                         "type": "string"
                     }
@@ -151,7 +238,10 @@ def extract_candidate_data(client: OpenAI, cv_text: str, candidate_id: str) -> D
                 },
                 "education_level": {
                     "type": "string",
-                    "description": "Highest education level. Use one of: high school, certificate, diploma, bachelor, master, phd, unknown.",
+                    "description": (
+                        "Highest education level. Use one of: high school, "
+                        "certificate, diploma, bachelor, master, phd, unknown."
+                    ),
                     "enum": [
                         "high school",
                         "certificate",
@@ -171,7 +261,10 @@ def extract_candidate_data(client: OpenAI, cv_text: str, candidate_id: str) -> D
                 },
                 "completeness_score": {
                     "type": "number",
-                    "description": "A score from 0 to 1 estimating how complete the CV is for recruitment screening."
+                    "description": (
+                        "Temporary model-estimated completeness from 0 to 1. "
+                        "This will be recalculated deterministically by Python after extraction."
+                    )
                 }
             },
             "required": [
@@ -192,9 +285,11 @@ You are extracting structured information from a candidate CV.
 
 Use only the information in the CV.
 Do not invent qualifications, skills, job titles, or experience.
-If information is missing, use reasonable conservative estimates only where necessary.
-
+If information is missing, use 'unknown' or an empty list where appropriate.
 The candidate_id must be exactly: {candidate_id}
+
+Important:
+The completeness_score field is required by the JSON schema, but it will be recalculated by Python after extraction. Provide a rough value between 0 and 1.
 
 CV text:
 {cv_text}
@@ -242,7 +337,6 @@ def parse_all_cvs() -> None:
     """
     Main workflow for Task 1.
     """
-
     load_api_key()
 
     client = OpenAI()

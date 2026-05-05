@@ -1,0 +1,119 @@
+Dr. Ethan Wallace
+Canberra, ACT
+Email: ethan.wallace@example.com
+Phone: 0419 336 882
+LinkedIn: linkedin.com/in/ethanwallace-datascience
+
+PROFESSIONAL SUMMARY
+
+Senior data scientist and analytics lead with 12 years of experience across government, finance, and technology sectors. Strong background in Python, SQL, machine learning, statistical modelling, cloud analytics, model governance, and stakeholder advisory. Experienced in leading small data science teams, building production models, explaining model outputs to senior executives, and developing responsible AI review processes. Interested in roles where advanced analytics can support transparent and evidence-based decision-making.
+
+KEY SKILLS
+
+- Python
+- SQL
+- Machine learning
+- Statistical modelling
+- Predictive analytics
+- Classification models
+- Regression models
+- Random forests
+- Gradient boosting
+- Model evaluation
+- Feature engineering
+- Data cleaning
+- Data governance
+- Responsible AI
+- Model explainability
+- Stakeholder management
+- Team leadership
+- Cloud platforms
+- AWS
+- Power BI
+- Tableau
+- Executive reporting
+
+WORK EXPERIENCE
+
+Lead Data Scientist
+Civic Analytics Lab
+Canberra, ACT
+March 2020 – Present
+
+- Led a team of five analysts and data scientists delivering predictive analytics projects for public sector clients.
+- Built machine learning models in Python to support service demand forecasting and risk assessment.
+- Developed model documentation covering assumptions, limitations, fairness risks, and governance requirements.
+- Used SQL to extract, join, and validate datasets from large internal databases.
+- Presented model findings to executive committees and non-technical stakeholders.
+- Implemented monitoring dashboards in Power BI to track model performance and data quality.
+- Introduced responsible AI review checkpoints before model outputs were used in operational decisions.
+
+Senior Data Scientist
+Southern Cross Bank
+Sydney, NSW
+July 2015 – February 2020
+
+- Developed customer risk and churn prediction models using Python, SQL, and scikit-learn.
+- Compared logistic regression, random forest, and gradient boosting models.
+- Evaluated models using precision, recall, F1-score, ROC-AUC, and confusion matrices.
+- Worked with risk, compliance, and product teams to explain model decisions and limitations.
+- Built Tableau dashboards to communicate customer trends and model performance.
+- Supported data governance reviews for sensitive customer analytics projects.
+
+Data Analyst
+InsightWorks Consulting
+Melbourne, VIC
+January 2012 – June 2015
+
+- Analysed customer, sales, and operations datasets using SQL, Excel, and Python.
+- Prepared dashboards and reports for clients in retail, insurance, and logistics.
+- Worked with stakeholders to define analytical questions and reporting requirements.
+- Documented data sources, transformations, and assumptions.
+
+EDUCATION
+
+PhD in Statistics
+Australian National University
+2008 – 2011
+
+Master of Applied Statistics
+University of Melbourne
+2006 – 2007
+
+Bachelor of Science
+University of Melbourne
+2003 – 2005
+
+CERTIFICATIONS
+
+- AWS Certified Machine Learning Specialty, 2022
+- Responsible AI Governance, 2023
+- Microsoft Power BI Data Analyst Associate, 2021
+
+PROJECTS
+
+Public Service Demand Forecasting
+2023
+
+- Led the development of a forecasting model for public service demand.
+- Used Python, SQL, and time-series modelling techniques.
+- Created dashboards for senior leaders to monitor demand patterns and resource pressure.
+- Documented model risks and recommended human oversight checkpoints.
+
+Responsible AI Model Review Framework
+2022
+
+- Designed a review checklist for machine learning models used in operational decision-making.
+- Included checks for data quality, explainability, proxy bias, and stakeholder impact.
+- Trained analysts on how to document assumptions and limitations.
+
+ADDITIONAL INFORMATION
+
+- Available with six weeks’ notice
+- Experienced team lead and mentor
+- Comfortable presenting to senior executives
+- Interested in ethical AI, transparent analytics, and decision-support systems
+
+REFERENCES
+
+Available on request.

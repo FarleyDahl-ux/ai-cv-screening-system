@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_005",
+  "name": "Jordan Lee",
+  "score": 0.2463,
+  "confidence": "low",
+  "breakdown": {
+    "skills": 0.2553,
+    "experience": 0.75,
+    "education": 0.75
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.4911,
+    "mlp_score": 0.0016,
+    "score_disagreement": 0.4895
+  },
+  "extended_breakdown": {
+    "skills": 0.2553,
+    "essential_skills": 0.3429,
+    "experience": 0.75,
+    "education": 0.75,
+    "completeness": 1.0
+  },
+  "explanation": "Potential concerns include limited overall skill match, missing several essential requirements, education level may be below requirement. The Naive Bayes and MLP scores differ substantially, so this candidate should be reviewed manually."
+}

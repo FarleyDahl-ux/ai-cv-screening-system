@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_009",
+  "name": "Maya Singh",
+  "score": 0.2847,
+  "confidence": "low",
+  "breakdown": {
+    "skills": 0.3936,
+    "experience": 0.5,
+    "education": 1.0
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.5566,
+    "mlp_score": 0.0128,
+    "score_disagreement": 0.5438
+  },
+  "extended_breakdown": {
+    "skills": 0.3936,
+    "essential_skills": 0.5286,
+    "experience": 0.5,
+    "education": 1.0,
+    "completeness": 1.0
+  },
+  "explanation": "Maya Singh shows meets or exceeds required education. Potential concerns include limited overall skill match, below the required experience level. The Naive Bayes and MLP scores differ substantially, so this candidate should be reviewed manually."
+}

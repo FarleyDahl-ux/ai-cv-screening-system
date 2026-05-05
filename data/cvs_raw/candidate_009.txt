@@ -1,0 +1,101 @@
+Maya Singh
+Melbourne, VIC
+Email: maya.singh@example.com
+Phone: 0415 809 773
+GitHub: github.com/mayasingh-ml
+LinkedIn: linkedin.com/in/mayasingh-ml
+
+PROFESSIONAL SUMMARY
+
+Machine learning researcher with strong technical skills in Python, deep learning, natural language processing, model evaluation, and experimental design. Experienced in building and testing machine learning models using academic and open-source datasets. Strong programming and research background, but limited commercial stakeholder management experience. Interested in applying machine learning methods to real-world decision-support problems.
+
+KEY SKILLS
+
+- Python
+- Machine learning
+- Deep learning
+- Natural language processing
+- Neural networks
+- PyTorch
+- scikit-learn
+- Model evaluation
+- Feature engineering
+- Classification models
+- Regression models
+- Statistical analysis
+- Experimental design
+- Data cleaning
+- Data preprocessing
+- Research writing
+- Git
+- Basic SQL
+- Basic data visualisation
+
+WORK EXPERIENCE
+
+Machine Learning Research Assistant
+Monash University
+Melbourne, VIC
+February 2022 – Present
+
+- Built and evaluated machine learning models for natural language processing research projects.
+- Used Python, PyTorch, and scikit-learn to train classification models on text datasets.
+- Evaluated model performance using accuracy, precision, recall, F1-score, and confusion matrices.
+- Cleaned and preprocessed large text datasets for experimental analysis.
+- Documented experiments, model settings, and results for academic publications.
+- Contributed to literature reviews on explainable AI and fairness in machine learning.
+- Worked mainly with academic supervisors and research team members rather than business stakeholders.
+
+Data Science Intern
+Applied AI Studio
+Melbourne, VIC
+June 2021 – December 2021
+
+- Supported a prototype text classification project using Python and scikit-learn.
+- Prepared training datasets by cleaning labels, removing duplicates, and standardising text fields.
+- Tested logistic regression, support vector machines, and simple neural network models.
+- Created basic charts to summarise model performance.
+- Presented technical findings to the data science team.
+
+EDUCATION
+
+Master of Artificial Intelligence
+Monash University
+2020 – 2021
+
+Bachelor of Computer Science
+University of Adelaide
+2017 – 2019
+
+CERTIFICATIONS
+
+- Deep Learning Specialization, Coursera, 2022
+- Natural Language Processing Specialization, Coursera, 2023
+- Responsible AI Concepts, 2024
+
+PROJECTS
+
+Text Classification Benchmark
+2023
+
+- Built a benchmark comparing logistic regression, SVM, and neural network models on open-source text classification datasets.
+- Evaluated models using precision, recall, F1-score, and confusion matrices.
+- Documented limitations related to class imbalance and label quality.
+
+Explainable AI Literature Review
+2024
+
+- Reviewed academic literature on explainable AI methods for machine learning systems.
+- Summarised common techniques including feature importance, SHAP, LIME, and model cards.
+- Discussed ethical risks when models are used in high-stakes decision contexts.
+
+ADDITIONAL INFORMATION
+
+- Available to start with two weeks’ notice
+- Strong technical and research skills
+- Limited experience presenting to business executives or gathering stakeholder requirements
+- Interested in responsible AI and applied machine learning
+
+REFERENCES
+
+Available on request.

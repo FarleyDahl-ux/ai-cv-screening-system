@@ -501,6 +501,8 @@ def index():
                     retrieved_candidates=results
                 )
 
+                recommendation = recommendation.replace("**", "")
+
                 output = {
                     "query": query,
                     "top_k": top_k,

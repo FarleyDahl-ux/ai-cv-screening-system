@@ -39,22 +39,22 @@
     },
     {
       "skill": "cloud platforms",
-      "weight": 0.3,
+      "weight": 0.5,
       "essential": false
     },
     {
       "skill": "power bi",
-      "weight": 0.3,
+      "weight": 0.5,
       "essential": false
     },
     {
       "skill": "tableau",
-      "weight": 0.3,
+      "weight": 0.5,
       "essential": false
     },
     {
       "skill": "postgraduate qualification",
-      "weight": 0.3,
+      "weight": 0.6,
       "essential": false
     },
     {

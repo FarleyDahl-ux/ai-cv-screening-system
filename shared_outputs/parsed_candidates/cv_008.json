@@ -1,0 +1,33 @@
+{
+  "candidate_id": "cv_008",
+  "name": "Oliver Bennett",
+  "skills": [
+    "sql",
+    "advanced excel",
+    "power bi",
+    "tableau",
+    "business intelligence",
+    "dashboard development",
+    "data visualisation",
+    "data cleaning",
+    "data validation",
+    "kpi reporting",
+    "financial reporting",
+    "operations reporting",
+    "requirements gathering",
+    "stakeholder management",
+    "reporting automation",
+    "process improvement",
+    "documentation",
+    "data quality checks",
+    "basic python"
+  ],
+  "experience_years": 7.0,
+  "education_level": "bachelor",
+  "job_titles": [
+    "business intelligence lead",
+    "senior reporting analyst",
+    "reporting analyst"
+  ],
+  "completeness_score": 1.0
+}

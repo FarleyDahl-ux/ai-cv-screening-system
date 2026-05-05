@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_010",
+  "name": "Sofia Martinez",
+  "score": 0.8508,
+  "confidence": "medium",
+  "breakdown": {
+    "skills": 0.6809,
+    "experience": 1.0,
+    "education": 1.0
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.7073,
+    "mlp_score": 0.9942,
+    "score_disagreement": 0.2869
+  },
+  "extended_breakdown": {
+    "skills": 0.6809,
+    "essential_skills": 0.7286,
+    "experience": 1.0,
+    "education": 1.0,
+    "completeness": 1.0
+  },
+  "explanation": "Sofia Martinez shows meets or exceeds required experience, meets or exceeds required education. The Naive Bayes and MLP scores show some disagreement, which reflects uncertainty in the prototype model comparison."
+}

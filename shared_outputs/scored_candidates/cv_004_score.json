@@ -1,24 +1,24 @@
 {
   "candidate_id": "cv_004",
   "name": "Noah Patel",
-  "score": 0.2848,
+  "score": 0.2818,
   "confidence": "low",
   "breakdown": {
-    "skills": 0.4353,
+    "skills": 0.4149,
     "experience": 0.5,
     "education": 1.0
   },
   "method_comparison": {
-    "naive_bayes_score": 0.5537,
-    "mlp_score": 0.0158,
-    "score_disagreement": 0.5379
+    "naive_bayes_score": 0.5532,
+    "mlp_score": 0.0103,
+    "score_disagreement": 0.5429
   },
   "extended_breakdown": {
-    "skills": 0.4353,
+    "skills": 0.4149,
     "essential_skills": 0.4857,
     "experience": 0.5,
     "education": 1.0,
-    "completeness": 0.95
+    "completeness": 1.0
   },
   "explanation": "Noah Patel shows meets or exceeds required education. Potential concerns include limited overall skill match, missing several essential requirements, below the required experience level. The Naive Bayes and MLP scores differ substantially, so this candidate should be reviewed manually."
 }

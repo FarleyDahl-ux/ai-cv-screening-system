@@ -1,0 +1,20 @@
+{
+  "candidate_id": "cv_005",
+  "name": "Jordan Lee",
+  "skills": [
+    "excel",
+    "basic sql",
+    "basic python",
+    "data entry",
+    "reporting",
+    "customer service",
+    "communication"
+  ],
+  "experience_years": 3.0,
+  "education_level": "diploma",
+  "job_titles": [
+    "administration assistant",
+    "customer service assistant"
+  ],
+  "completeness_score": 1.0
+}

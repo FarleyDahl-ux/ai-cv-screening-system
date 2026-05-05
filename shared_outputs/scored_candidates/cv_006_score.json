@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_006",
+  "name": "Dr. Ethan Wallace",
+  "score": 0.8548,
+  "confidence": "medium",
+  "breakdown": {
+    "skills": 0.7234,
+    "experience": 1.0,
+    "education": 1.0
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.7134,
+    "mlp_score": 0.9961,
+    "score_disagreement": 0.2827
+  },
+  "extended_breakdown": {
+    "skills": 0.7234,
+    "essential_skills": 0.7143,
+    "experience": 1.0,
+    "education": 1.0,
+    "completeness": 1.0
+  },
+  "explanation": "Dr. Ethan Wallace shows meets or exceeds required experience, meets or exceeds required education. The Naive Bayes and MLP scores show some disagreement, which reflects uncertainty in the prototype model comparison."
+}

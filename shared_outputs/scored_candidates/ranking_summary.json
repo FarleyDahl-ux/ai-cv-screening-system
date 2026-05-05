@@ -1,49 +1,109 @@
 {
   "job_id": "jd_001",
   "job_title": "Senior Data Scientist",
-  "candidate_count": 4,
-  "average_score": 0.5695,
-  "average_model_disagreement": 0.4062,
+  "candidate_count": 10,
+  "average_score": 0.5831,
+  "average_model_disagreement": 0.3321,
   "ranking": [
     {
       "rank": 1,
-      "candidate_id": "cv_003",
-      "name": "Lina Rodriguez",
-      "score": 0.8381,
+      "candidate_id": "cv_006",
+      "name": "Dr. Ethan Wallace",
+      "score": 0.8548,
       "confidence": "medium",
-      "naive_bayes_score": 0.6892,
-      "mlp_score": 0.987,
-      "score_disagreement": 0.2978
+      "naive_bayes_score": 0.7134,
+      "mlp_score": 0.9961,
+      "score_disagreement": 0.2827
     },
     {
       "rank": 2,
-      "candidate_id": "cv_001",
-      "name": "Aisha Khan",
-      "score": 0.8206,
+      "candidate_id": "cv_010",
+      "name": "Sofia Martinez",
+      "score": 0.8508,
       "confidence": "medium",
-      "naive_bayes_score": 0.6707,
-      "mlp_score": 0.9705,
-      "score_disagreement": 0.2998
+      "naive_bayes_score": 0.7073,
+      "mlp_score": 0.9942,
+      "score_disagreement": 0.2869
     },
     {
       "rank": 3,
-      "candidate_id": "cv_002",
-      "name": "Marcus Williams",
-      "score": 0.3346,
-      "confidence": "low",
-      "naive_bayes_score": 0.5793,
-      "mlp_score": 0.0899,
-      "score_disagreement": 0.4894
+      "candidate_id": "cv_003",
+      "name": "Lina Rodriguez",
+      "score": 0.835,
+      "confidence": "medium",
+      "naive_bayes_score": 0.6887,
+      "mlp_score": 0.9813,
+      "score_disagreement": 0.2926
     },
     {
       "rank": 4,
+      "candidate_id": "cv_001",
+      "name": "Aisha Khan",
+      "score": 0.8118,
+      "confidence": "medium",
+      "naive_bayes_score": 0.674,
+      "mlp_score": 0.9497,
+      "score_disagreement": 0.2757
+    },
+    {
+      "rank": 5,
+      "candidate_id": "cv_007",
+      "name": "Grace Nguyen",
+      "score": 0.693,
+      "confidence": "medium",
+      "naive_bayes_score": 0.6428,
+      "mlp_score": 0.7432,
+      "score_disagreement": 0.1004
+    },
+    {
+      "rank": 6,
+      "candidate_id": "cv_008",
+      "name": "Oliver Bennett",
+      "score": 0.6378,
+      "confidence": "medium",
+      "naive_bayes_score": 0.6346,
+      "mlp_score": 0.6409,
+      "score_disagreement": 0.0063
+    },
+    {
+      "rank": 7,
+      "candidate_id": "cv_002",
+      "name": "Marcus Williams",
+      "score": 0.3347,
+      "confidence": "low",
+      "naive_bayes_score": 0.5846,
+      "mlp_score": 0.0847,
+      "score_disagreement": 0.4999
+    },
+    {
+      "rank": 8,
+      "candidate_id": "cv_009",
+      "name": "Maya Singh",
+      "score": 0.2847,
+      "confidence": "low",
+      "naive_bayes_score": 0.5566,
+      "mlp_score": 0.0128,
+      "score_disagreement": 0.5438
+    },
+    {
+      "rank": 9,
       "candidate_id": "cv_004",
       "name": "Noah Patel",
-      "score": 0.2848,
+      "score": 0.2818,
       "confidence": "low",
-      "naive_bayes_score": 0.5537,
-      "mlp_score": 0.0158,
-      "score_disagreement": 0.5379
+      "naive_bayes_score": 0.5532,
+      "mlp_score": 0.0103,
+      "score_disagreement": 0.5429
+    },
+    {
+      "rank": 10,
+      "candidate_id": "cv_005",
+      "name": "Jordan Lee",
+      "score": 0.2463,
+      "confidence": "low",
+      "naive_bayes_score": 0.4911,
+      "mlp_score": 0.0016,
+      "score_disagreement": 0.4895
     }
   ]
 }

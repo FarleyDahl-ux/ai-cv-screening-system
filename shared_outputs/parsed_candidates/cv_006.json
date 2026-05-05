@@ -1,0 +1,36 @@
+{
+  "candidate_id": "cv_006",
+  "name": "Dr. Ethan Wallace",
+  "skills": [
+    "python",
+    "sql",
+    "machine learning",
+    "statistical modelling",
+    "predictive analytics",
+    "classification models",
+    "regression models",
+    "random forests",
+    "gradient boosting",
+    "model evaluation",
+    "feature engineering",
+    "data cleaning",
+    "data governance",
+    "responsible ai",
+    "model explainability",
+    "stakeholder management",
+    "team leadership",
+    "cloud platforms",
+    "aws",
+    "power bi",
+    "tableau",
+    "executive reporting"
+  ],
+  "experience_years": 12.0,
+  "education_level": "phd",
+  "job_titles": [
+    "lead data scientist",
+    "senior data scientist",
+    "data analyst"
+  ],
+  "completeness_score": 1.0
+}

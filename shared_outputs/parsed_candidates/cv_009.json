@@ -1,0 +1,32 @@
+{
+  "candidate_id": "cv_009",
+  "name": "Maya Singh",
+  "skills": [
+    "python",
+    "machine learning",
+    "deep learning",
+    "natural language processing",
+    "neural networks",
+    "pytorch",
+    "scikit-learn",
+    "model evaluation",
+    "feature engineering",
+    "classification models",
+    "regression models",
+    "statistical analysis",
+    "experimental design",
+    "data cleaning",
+    "data preprocessing",
+    "research writing",
+    "git",
+    "basic sql",
+    "basic data visualisation"
+  ],
+  "experience_years": 2.0,
+  "education_level": "master",
+  "job_titles": [
+    "machine learning research assistant",
+    "data science intern"
+  ],
+  "completeness_score": 1.0
+}

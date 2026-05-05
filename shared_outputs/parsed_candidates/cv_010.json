@@ -1,0 +1,32 @@
+{
+  "candidate_id": "cv_010",
+  "name": "Sofia Martinez",
+  "skills": [
+    "sql",
+    "python",
+    "excel",
+    "tableau",
+    "power bi",
+    "data cleaning",
+    "data visualisation",
+    "customer segmentation",
+    "marketing analytics",
+    "a/b testing",
+    "campaign reporting",
+    "exploratory data analysis",
+    "statistical analysis",
+    "regression analysis",
+    "dashboard development",
+    "stakeholder communication",
+    "report writing",
+    "basic machine learning",
+    "responsible ai"
+  ],
+  "experience_years": 4.0,
+  "education_level": "bachelor",
+  "job_titles": [
+    "marketing data analyst",
+    "data analyst"
+  ],
+  "completeness_score": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cv_007",
+  "name": "Grace Nguyen",
+  "score": 0.693,
+  "confidence": "medium",
+  "breakdown": {
+    "skills": 0.4894,
+    "experience": 1.0,
+    "education": 1.0
+  },
+  "method_comparison": {
+    "naive_bayes_score": 0.6428,
+    "mlp_score": 0.7432,
+    "score_disagreement": 0.1004
+  },
+  "extended_breakdown": {
+    "skills": 0.4894,
+    "essential_skills": 0.5857,
+    "experience": 1.0,
+    "education": 1.0,
+    "completeness": 1.0
+  },
+  "explanation": "Grace Nguyen shows meets or exceeds required experience, meets or exceeds required education. The Naive Bayes and MLP scores are broadly consistent."
+}

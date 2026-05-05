@@ -1,24 +1,24 @@
 {
   "candidate_id": "cv_001",
   "name": "Aisha Khan",
-  "score": 0.8206,
+  "score": 0.8118,
   "confidence": "medium",
   "breakdown": {
-    "skills": 0.6706,
+    "skills": 0.6489,
     "experience": 0.75,
     "education": 1.0
   },
   "method_comparison": {
-    "naive_bayes_score": 0.6707,
-    "mlp_score": 0.9705,
-    "score_disagreement": 0.2998
+    "naive_bayes_score": 0.674,
+    "mlp_score": 0.9497,
+    "score_disagreement": 0.2757
   },
   "extended_breakdown": {
-    "skills": 0.6706,
+    "skills": 0.6489,
     "essential_skills": 0.7286,
     "experience": 0.75,
     "education": 1.0,
-    "completeness": 0.9
+    "completeness": 1.0
   },
   "explanation": "Aisha Khan shows meets or exceeds required education. The Naive Bayes and MLP scores show some disagreement, which reflects uncertainty in the prototype model comparison."
 }

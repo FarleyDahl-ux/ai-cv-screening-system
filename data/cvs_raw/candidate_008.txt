@@ -1,0 +1,109 @@
+Oliver Bennett
+Hobart, TAS
+Email: oliver.bennett@example.com
+Phone: 0430 447 901
+LinkedIn: linkedin.com/in/oliverbennett-bi
+
+PROFESSIONAL SUMMARY
+
+Business intelligence and reporting specialist with 7 years of experience in operations, finance, and logistics reporting. Highly skilled in SQL, Excel, Power BI, Tableau, dashboard design, data validation, KPI reporting, and stakeholder requirements gathering. Strong at translating business questions into clear reporting products. Limited machine learning experience, but strong practical capability in business reporting and analytics workflow design.
+
+KEY SKILLS
+
+- SQL
+- Advanced Excel
+- Power BI
+- Tableau
+- Business intelligence
+- Dashboard development
+- Data visualisation
+- Data cleaning
+- Data validation
+- KPI reporting
+- Financial reporting
+- Operations reporting
+- Requirements gathering
+- Stakeholder management
+- Reporting automation
+- Process improvement
+- Documentation
+- Data quality checks
+- Basic Python
+
+WORK EXPERIENCE
+
+Business Intelligence Lead
+Tasman Logistics Group
+Hobart, TAS
+September 2021 – Present
+
+- Led reporting development for warehouse, transport, and customer service operations.
+- Built Power BI dashboards tracking delivery times, stock movement, customer issues, and team performance.
+- Used SQL to extract and combine operational data from multiple internal systems.
+- Automated weekly Excel reporting packs, reducing manual work by approximately 10 hours per month.
+- Worked with managers to define KPIs, dashboard filters, and reporting definitions.
+- Documented data sources, refresh schedules, and dashboard calculation logic.
+- Identified data quality problems in shipment records and recommended validation checks.
+
+Senior Reporting Analyst
+Mercury Finance Operations
+Hobart, TAS
+July 2018 – August 2021
+
+- Prepared financial and operational reports using SQL, Excel, and Tableau.
+- Created dashboards showing processing volumes, service delays, and team productivity.
+- Worked with finance stakeholders to clarify reporting requirements and definitions.
+- Supported month-end reporting through data validation and reconciliation.
+- Presented findings to senior managers using clear visualisations and written summaries.
+
+Reporting Analyst
+Southern Retail Services
+Launceston, TAS
+February 2016 – June 2018
+
+- Prepared sales and stock reports using Excel and SQL.
+- Built Tableau dashboards for product and store-level performance.
+- Assisted with data cleaning, missing value checks, and documentation.
+- Created process notes for recurring reports.
+
+EDUCATION
+
+Bachelor of Business Information Systems
+University of Tasmania
+2012 – 2015
+
+CERTIFICATIONS
+
+- Microsoft Power BI Data Analyst Associate, 2022
+- Tableau Desktop Specialist, 2019
+- Advanced SQL for Analytics, 2021
+- Excel Advanced Reporting, 2018
+
+PROJECTS
+
+Logistics Performance Dashboard
+2023
+
+- Built a Power BI dashboard tracking delivery delays, warehouse backlog, and customer service escalations.
+- Used SQL to join shipment, warehouse, and customer enquiry data.
+- Added filters for region, delivery partner, product category, and date range.
+- Documented the data model and dashboard logic for business users.
+
+Finance Reporting Automation
+2020
+
+- Automated parts of a monthly finance reporting process using SQL queries and Excel templates.
+- Reduced manual copy-paste steps and improved consistency in recurring reports.
+- Worked with finance stakeholders to validate output before rollout.
+
+ADDITIONAL INFORMATION
+
+- Available with four weeks’ notice
+- Strong dashboard and reporting background
+- Comfortable working with non-technical stakeholders
+- Interested in transparent reporting and responsible data use
+- Limited machine learning experience beyond introductory reading
+
+REFERENCES
+
+Available on request.

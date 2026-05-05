@@ -1,0 +1,28 @@
+{
+  "candidate_id": "cv_007",
+  "name": "Grace Nguyen",
+  "skills": [
+    "sql",
+    "excel",
+    "power bi",
+    "basic python",
+    "data cleaning",
+    "data visualisation",
+    "dashboard development",
+    "basic statistics",
+    "exploratory data analysis",
+    "requirements gathering",
+    "process improvement",
+    "customer operations",
+    "stakeholder communication",
+    "report writing",
+    "presentation skills"
+  ],
+  "experience_years": 6.0,
+  "education_level": "bachelor",
+  "job_titles": [
+    "customer operations team leader",
+    "customer service officer"
+  ],
+  "completeness_score": 1.0
+}

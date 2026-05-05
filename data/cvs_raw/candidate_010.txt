@@ -1,0 +1,99 @@
+Sofia Martinez
+Newcastle, NSW
+Email: sofia.martinez@example.com
+Phone: 0416 552 904
+LinkedIn: linkedin.com/in/sofiamartinez-analytics
+
+PROFESSIONAL SUMMARY
+
+Data analyst with 4 years of experience across marketing analytics, customer insights, and campaign reporting. Strong skills in SQL, Python, Excel, Tableau, Power BI, data cleaning, customer segmentation, A/B testing, and stakeholder communication. Experienced in translating business questions into analysis, building dashboards, and presenting insights to marketing and product teams. Interested in roles that combine analytics, decision support, and responsible use of AI.
+
+KEY SKILLS
+
+- SQL
+- Python
+- Excel
+- Tableau
+- Power BI
+- Data cleaning
+- Data visualisation
+- Customer segmentation
+- Marketing analytics
+- A/B testing
+- Campaign reporting
+- Exploratory data analysis
+- Statistical analysis
+- Regression analysis
+- Dashboard development
+- Stakeholder communication
+- Report writing
+- Basic machine learning
+- Responsible AI
+
+WORK EXPERIENCE
+
+Marketing Data Analyst
+BrightWave Digital
+Newcastle, NSW
+May 2022 – Present
+
+- Analysed customer campaign performance using SQL, Python, and Excel.
+- Built Tableau dashboards to track campaign conversion, engagement, customer segments, and channel performance.
+- Conducted A/B test analysis for email and digital advertising campaigns.
+- Used Python notebooks to clean customer data and prepare summary tables for marketing managers.
+- Worked with marketing and product teams to translate business questions into analysis tasks.
+- Presented monthly insight reports to non-technical stakeholders.
+- Supported a customer segmentation project using clustering methods and behavioural data.
+
+Data Analyst
+Coastal Retail Group
+Newcastle, NSW
+January 2020 – April 2022
+
+- Prepared weekly sales and customer reports using SQL, Excel, and Power BI.
+- Cleaned product, sales, and loyalty program datasets.
+- Created dashboards showing store performance, product trends, and customer purchasing behaviour.
+- Helped identify customer groups with declining repeat purchase rates.
+- Documented reporting definitions and dashboard update processes.
+- Assisted with process improvements for recurring sales reporting.
+
+EDUCATION
+
+Bachelor of Business Analytics
+University of Newcastle
+2016 – 2019
+
+CERTIFICATIONS
+
+- Google Data Analytics Certificate, 2021
+- Tableau Desktop Specialist, 2022
+- Python for Data Analysis, DataCamp, 2023
+- A/B Testing for Business Analysts, 2024
+
+PROJECTS
+
+Customer Segmentation Project
+2023
+
+- Used customer transaction and engagement data to identify behavioural segments.
+- Cleaned data using Python and SQL.
+- Created Tableau visualisations showing segment size, purchase frequency, and campaign response.
+- Presented recommendations to marketing managers in plain English.
+
+Campaign Performance Dashboard
+2024
+
+- Built a dashboard tracking campaign conversion rates, click-through rates, and customer engagement.
+- Added filters for campaign type, channel, customer segment, and time period.
+- Documented dashboard logic and data sources for repeatable use.
+
+ADDITIONAL INFORMATION
+
+- Available to start with three weeks’ notice
+- Strong communication skills and comfortable presenting to stakeholders
+- Interested in customer analytics, decision-support systems, and ethical data use
+- Open to data analyst, marketing analyst, and junior data scientist roles
+
+REFERENCES
+
+Available on request.

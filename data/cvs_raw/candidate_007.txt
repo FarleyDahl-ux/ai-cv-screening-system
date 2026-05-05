@@ -1,0 +1,98 @@
+Grace Nguyen
+Sydney, NSW
+Email: grace.nguyen@example.com
+Phone: 0407 662 118
+LinkedIn: linkedin.com/in/gracenguyen-data
+
+PROFESSIONAL SUMMARY
+
+Career changer moving from customer operations into data analytics. Recently completed a data analytics bootcamp covering Python, SQL, Excel, Power BI, data cleaning, dashboards, and introductory machine learning. Previous work experience includes 6 years in customer service operations, team coordination, process improvement, and stakeholder communication. Strong communication skills and practical understanding of business workflows. Seeking an entry-level data analyst or junior business intelligence role.
+
+KEY SKILLS
+
+- SQL
+- Excel
+- Power BI
+- Basic Python
+- Data cleaning
+- Data visualisation
+- Dashboard development
+- Basic statistics
+- Exploratory data analysis
+- Requirements gathering
+- Process improvement
+- Customer operations
+- Stakeholder communication
+- Report writing
+- Presentation skills
+
+WORK EXPERIENCE
+
+Customer Operations Team Leader
+MetroCare Services
+Sydney, NSW
+April 2020 – Present
+
+- Coordinated a team of eight customer service staff handling client enquiries and service requests.
+- Prepared weekly Excel reports tracking enquiry volumes, response times, and unresolved cases.
+- Worked with managers to identify process bottlenecks and improve handover procedures.
+- Created simple dashboards in Power BI as part of an internal reporting improvement project.
+- Presented operational insights to managers using plain-English summaries.
+- Supported data cleaning by checking missing case categories and duplicate customer records.
+
+Customer Service Officer
+MetroCare Services
+Sydney, NSW
+February 2018 – March 2020
+
+- Responded to customer enquiries and maintained accurate service records.
+- Helped update customer information in internal systems.
+- Identified recurring customer issues and reported patterns to supervisors.
+- Assisted with spreadsheet-based reporting for monthly team meetings.
+
+EDUCATION
+
+Data Analytics Bootcamp
+General Assembly
+2024
+
+Bachelor of Arts
+Macquarie University
+2014 – 2017
+Major: Communication
+
+CERTIFICATIONS
+
+- Data Analytics Bootcamp Certificate, 2024
+- SQL for Data Analysis, 2024
+- Microsoft Power BI Introduction, 2024
+- Python Basics, 2024
+
+PROJECTS
+
+Customer Service Dashboard
+2024
+
+- Built a Power BI dashboard using sample customer enquiry data.
+- Cleaned missing values and standardised category labels.
+- Created charts showing response time, enquiry type, and monthly volume trends.
+- Wrote a short summary explaining operational insights for managers.
+
+Introductory Churn Analysis Project
+2024
+
+- Used Python and pandas to explore a sample customer churn dataset.
+- Created summary tables and basic charts.
+- Tested a simple logistic regression model as part of bootcamp coursework.
+- Documented limitations and noted that the model was for learning purposes only.
+
+ADDITIONAL INFORMATION
+
+- Available to start with four weeks’ notice
+- Strong communication and stakeholder engagement skills
+- Interested in business intelligence, reporting, and ethical data use
+- Open to junior data analyst, BI analyst, or reporting analyst roles
+
+REFERENCES
+
+Available on request.
